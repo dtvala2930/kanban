@@ -1,0 +1,77 @@
+{
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+  "organizeImports": {
+    "enabled": true
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "complexity": {
+        "useSimplifiedLogicExpression": "warn"
+      },
+      "nursery": {
+        "useSortedClasses": "warn"
+      },
+      "correctness": {
+        "noUnusedImports": "error",
+        "noUnusedPrivateClassMembers": "error",
+        "noUnusedVariables": "error"
+      },
+      "suspicious": {
+        "noConsoleLog": "warn"
+      },
+      "a11y": {
+        "noSvgWithoutTitle": "off"
+      },
+      "style": {
+        "useNodejsImportProtocol": "off"
+      }
+    }
+  },
+  "formatter": {
+    "enabled": true,
+    "formatWithErrors": true,
+    "attributePosition": "auto",
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineEnding": "crlf",
+    "lineWidth": 120
+  },
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git"
+  },
+  "javascript": {
+    "formatter": {
+      "arrowParentheses": "always",
+      "bracketSameLine": false,
+      "bracketSpacing": true,
+      "jsxQuoteStyle": "single",
+      "quoteProperties": "asNeeded",
+      "semicolons": "always"
+    }
+  },
+  "json": {
+    "formatter": {
+      "enabled": true,
+      "trailingCommas": "none"
+    }
+  },
+  "files": {
+    "ignore": [
+      ".next",
+      ".yarn",
+      "node_modules",
+      "public",
+      "./auto-imports.d.ts",
+      "mocks",
+      "dist",
+      "coverage",
+      ".nx",
+      "**/*.d.ts",
+      "global.css",
+      "**/*json"
+    ]
+  }
+}

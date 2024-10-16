@@ -1,0 +1,38 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../dist/out-tsc",
+    "types": [
+      "node",
+      "@nx/react/typings/cssmodule.d.ts",
+      "@nx/react/typings/image.d.ts",
+      "vite/client"
+    ]
+  },
+  "exclude": [
+    "**/*.spec.ts",
+    "**/*.test.ts",
+    "**/*.spec.tsx",
+    "**/*.test.tsx",
+    "**/*.spec.js",
+    "**/*.test.js",
+    "**/*.spec.jsx",
+    "**/*.test.jsx",
+    "vite.config.ts",
+    "vitest.config.ts",
+    "shared/**/*.test.ts",
+    "shared/**/*.spec.ts",
+    "shared/**/*.test.tsx",
+    "shared/**/*.spec.tsx",
+    "shared/**/*.test.js",
+    "shared/**/*.spec.js",
+    "shared/**/*.test.jsx",
+    "shared/**/*.spec.jsx"
+  ],
+  "include": [
+    "shared/**/*.js",
+    "shared/**/*.jsx",
+    "shared/**/*.ts",
+    "shared/**/*.tsx"
+  ]
+}
