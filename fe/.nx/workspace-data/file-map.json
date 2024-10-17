@@ -1,0 +1,634 @@
+{
+  "version": "6.0",
+  "nxVersion": "20.0.0",
+  "pathMappings": {
+    "@kanban/libs/*": [
+      "libs/shared/*"
+    ],
+    "~kanban/*": [
+      "apps/kanban/src/*"
+    ]
+  },
+  "nxJsonPlugins": [
+    {
+      "name": "@nx/vite/plugin",
+      "options": {
+        "buildTargetName": "build",
+        "testTargetName": "test",
+        "serveTargetName": "serve",
+        "previewTargetName": "preview",
+        "serveStaticTargetName": "serve-static",
+        "typecheckTargetName": "typecheck"
+      }
+    },
+    {
+      "name": "@nx/cypress/plugin",
+      "options": {
+        "targetName": "e2e",
+        "openTargetName": "open-cypress",
+        "componentTestingTargetName": "component-test",
+        "ciTargetName": "e2e-ci"
+      }
+    },
+    {
+      "name": "@nx/jest/plugin",
+      "options": {
+        "targetName": "test"
+      }
+    }
+  ],
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": "biome.json",
+        "hash": "11261749076368826554"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "10219890373445201411"
+      },
+      {
+        "file": "node_modules/.vite/apps/my-app/deps_temp_31524cd9/chunk-WOOG5QLI.js.map",
+        "hash": "9947606979680686569"
+      },
+      {
+        "file": "node_modules/.vite/apps/my-app/deps_temp_31524cd9/chunk-L7CGVBTF.js.map",
+        "hash": "7203571217087542815"
+      },
+      {
+        "file": "yarn.lock",
+        "hash": "7239422782206719994"
+      },
+      {
+        "file": "node_modules/.vite/apps/my-app/deps_temp_31524cd9/@tanstack_react-query.js",
+        "hash": "681055465832598548"
+      },
+      {
+        "file": "node_modules/.vite/apps/my-app/deps_temp_31524cd9/chunk-MLCY4TNI.js.map",
+        "hash": "3229892274087624939"
+      },
+      {
+        "file": ".nx/workspace-data/d/daemon.log",
+        "hash": "16418713251954226616"
+      },
+      {
+        "file": "node_modules/.vite/apps/my-app/deps_temp_31524cd9/chunk-WOOG5QLI.js",
+        "hash": "8431663604408562229"
+      },
+      {
+        "file": ".husky/pre-commit",
+        "hash": "11280969493616781712"
+      },
+      {
+        "file": "node_modules/.vite/apps/my-app/deps_temp_31524cd9/@radix-ui_react-label.js",
+        "hash": "9714263011573598268"
+      },
+      {
+        "file": "node_modules/.vite/apps/my-app/deps_temp_31524cd9/tailwind-merge.js",
+        "hash": "902142807224130087"
+      },
+      {
+        "file": "node_modules/.vite/apps/my-app/deps_temp_31524cd9/react.js.map",
+        "hash": "9947606979680686569"
+      },
+      {
+        "file": "node_modules/.vite/apps/my-app/deps_temp_31524cd9/@hookform_resolvers_zod.js.map",
+        "hash": "423442627073111462"
+      },
+      {
+        "file": "node_modules/.vite/apps/my-app/deps_temp_31524cd9/chunk-XOBLWMBN.js.map",
+        "hash": "3552200049279424905"
+      },
+      {
+        "file": "node_modules/.vite/apps/my-app/deps_temp_31524cd9/react_jsx-runtime.js",
+        "hash": "11455059394477047328"
+      },
+      {
+        "file": ".lintstagedrc",
+        "hash": "4737398198180938646"
+      },
+      {
+        "file": "node_modules/.vite/apps/my-app/deps_temp_31524cd9/react-hook-form.js",
+        "hash": "17367874696934301545"
+      },
+      {
+        "file": "README.md",
+        "hash": "6339619848296190225"
+      },
+      {
+        "file": "node_modules/.vite/apps/my-app/deps_temp_31524cd9/@syncfusion_ej2-react-kanban.js.map",
+        "hash": "16289646130700067652"
+      },
+      {
+        "file": "node_modules/.vite/apps/my-app/deps_temp_31524cd9/@radix-ui_react-slot.js",
+        "hash": "17602158582702330573"
+      },
+      {
+        "file": "node_modules/.vite/apps/my-app/deps_temp_31524cd9/@radix-ui_react-dialog.js",
+        "hash": "15384116478517596511"
+      },
+      {
+        "file": "node_modules/.vite/apps/my-app/deps_temp_31524cd9/lucide-react.js",
+        "hash": "3040945980671431104"
+      },
+      {
+        "file": "node_modules/.vite/apps/my-app/deps_temp_31524cd9/chunk-EEIMULSC.js",
+        "hash": "3982652719781460593"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json",
+        "hash": "273152085203854547"
+      },
+      {
+        "file": "node_modules/.vite/apps/my-app/deps_temp_31524cd9/react.js",
+        "hash": "17081391578501490378"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "4934098906304722861"
+      },
+      {
+        "file": "node_modules/.vite/apps/my-app/deps_temp_31524cd9/@radix-ui_react-toast.js.map",
+        "hash": "8559961628373409521"
+      },
+      {
+        "file": "node_modules/.vite/apps/my-app/deps_temp_31524cd9/@radix-ui_react-toast.js",
+        "hash": "5124192334247574387"
+      },
+      {
+        "file": "node_modules/.vite/apps/my-app/deps_temp_31524cd9/chunk-XOBLWMBN.js",
+        "hash": "10640038562782802250"
+      },
+      {
+        "file": "node_modules/.vite/apps/my-app/deps_temp_31524cd9/@radix-ui_react-label.js.map",
+        "hash": "4568037781106672819"
+      },
+      {
+        "file": "node_modules/.vite/apps/my-app/deps_temp_31524cd9/class-variance-authority.js.map",
+        "hash": "14735854725779173341"
+      },
+      {
+        "file": "commitlint.config.cjs",
+        "hash": "17598124507223503168"
+      },
+      {
+        "file": "node_modules/.vite/apps/my-app/deps_temp_31524cd9/chunk-GABQSIQC.js",
+        "hash": "15020059862812506124"
+      },
+      {
+        "file": "node_modules/.vite/apps/my-app/deps_temp_31524cd9/react_jsx-dev-runtime.js",
+        "hash": "9359879886928788843"
+      },
+      {
+        "file": "node_modules/.vite/apps/my-app/deps_temp_31524cd9/clsx.js.map",
+        "hash": "5490733465543816018"
+      },
+      {
+        "file": ".husky/commit-msg",
+        "hash": "17193081696979627749"
+      },
+      {
+        "file": "package.json",
+        "hash": "9659295577947075307"
+      },
+      {
+        "file": "node_modules/.vite/apps/my-app/deps_temp_31524cd9/clsx.js",
+        "hash": "18122812125314365144"
+      },
+      {
+        "file": "node_modules/.vite/apps/my-app/deps_temp_31524cd9/chunk-EEIMULSC.js.map",
+        "hash": "2880993692658690630"
+      },
+      {
+        "file": "node_modules/.vite/apps/my-app/deps_temp_31524cd9/react-router-dom.js.map",
+        "hash": "8806865983808312180"
+      },
+      {
+        "file": "node_modules/.vite/apps/my-app/deps_temp_31524cd9/zod.js",
+        "hash": "12865623641490975384"
+      },
+      {
+        "file": "node_modules/.vite/apps/my-app/deps_temp_31524cd9/lucide-react.js.map",
+        "hash": "14474068830084681084"
+      },
+      {
+        "file": "node_modules/.vite/apps/my-app/deps_temp_31524cd9/chunk-MLCY4TNI.js",
+        "hash": "9866278149567552892"
+      },
+      {
+        "file": "nx.json",
+        "hash": "6674551618539649876"
+      },
+      {
+        "file": ".nx/workspace-data/cypress-8161926102631362384.hash",
+        "hash": "1389868326933519382"
+      },
+      {
+        "file": "node_modules/.vite/apps/my-app/deps_temp_31524cd9/@radix-ui_react-dialog.js.map",
+        "hash": "17960342444312974515"
+      },
+      {
+        "file": "node_modules/.vite/apps/my-app/deps_temp_31524cd9/react_jsx-runtime.js.map",
+        "hash": "9947606979680686569"
+      },
+      {
+        "file": "node_modules/.vite/apps/my-app/deps_temp_31524cd9/chunk-DPMXI6SG.js.map",
+        "hash": "4111891722165898564"
+      },
+      {
+        "file": ".nx/workspace-data/vite-8410637291831080659.hash",
+        "hash": "2608419439293483524"
+      },
+      {
+        "file": "node_modules/.vite/apps/my-app/deps_temp_31524cd9/react-helmet-async.js.map",
+        "hash": "16453087374733994888"
+      },
+      {
+        "file": "node_modules/.vite/apps/my-app/deps_temp_31524cd9/chunk-DPMXI6SG.js",
+        "hash": "12550670815091920566"
+      },
+      {
+        "file": "node_modules/.vite/apps/my-app/deps_temp_31524cd9/react-hook-form.js.map",
+        "hash": "9947606979680686569"
+      },
+      {
+        "file": "vitest.workspace.ts",
+        "hash": "3847540345805632664"
+      },
+      {
+        "file": "node_modules/.vite/apps/my-app/deps_temp_31524cd9/react-error-boundary.js.map",
+        "hash": "17189627952693815458"
+      },
+      {
+        "file": "node_modules/.vite/apps/my-app/deps_temp_31524cd9/react-helmet-async.js",
+        "hash": "11996442639789803589"
+      },
+      {
+        "file": "node_modules/.vite/apps/my-app/deps_temp_31524cd9/@hookform_resolvers_zod.js",
+        "hash": "13928551091271888022"
+      },
+      {
+        "file": "node_modules/.vite/apps/my-app/deps_temp_31524cd9/zod.js.map",
+        "hash": "13385293699760967697"
+      },
+      {
+        "file": ".gitattributes",
+        "hash": "13194702717607086212"
+      },
+      {
+        "file": "node_modules/.vite/apps/my-app/deps_temp_31524cd9/react-router-dom.js",
+        "hash": "16133724654208825184"
+      },
+      {
+        "file": "node_modules/.vite/apps/my-app/deps_temp_31524cd9/react-dom_client.js.map",
+        "hash": "10053224133889440878"
+      },
+      {
+        "file": "node_modules/.vite/apps/my-app/deps_temp_31524cd9/@radix-ui_react-slot.js.map",
+        "hash": "9947606979680686569"
+      },
+      {
+        "file": "node_modules/.vite/apps/my-app/deps_temp_31524cd9/class-variance-authority.js",
+        "hash": "15032888345817706594"
+      },
+      {
+        "file": "node_modules/.vite/apps/my-app/deps_temp_31524cd9/chunk-L7CGVBTF.js",
+        "hash": "8630392993020039509"
+      },
+      {
+        "file": "node_modules/.vite/apps/my-app/deps_temp_31524cd9/react_jsx-dev-runtime.js.map",
+        "hash": "9780460407091798453"
+      },
+      {
+        "file": ".nx/workspace-data/jest-7930610538513362720.hash",
+        "hash": "1389868326933519382"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json",
+        "hash": "17945504604431456451"
+      },
+      {
+        "file": "node_modules/.vite/apps/my-app/deps_temp_31524cd9/@tanstack_react-query.js.map",
+        "hash": "13375634555459516519"
+      },
+      {
+        "file": "node_modules/.vite/apps/my-app/deps_temp_31524cd9/@syncfusion_ej2-react-kanban.js",
+        "hash": "10185793801740219390"
+      },
+      {
+        "file": "node_modules/.vite/apps/my-app/deps_temp_31524cd9/react-error-boundary.js",
+        "hash": "17825031087199883496"
+      },
+      {
+        "file": "node_modules/.vite/apps/my-app/deps_temp_31524cd9/chunk-GABQSIQC.js.map",
+        "hash": "14392254958571440606"
+      },
+      {
+        "file": "node_modules/.vite/apps/my-app/deps_temp_31524cd9/react-dom_client.js",
+        "hash": "14037487517384338383"
+      },
+      {
+        "file": "node_modules/.vite/apps/my-app/deps_temp_31524cd9/tailwind-merge.js.map",
+        "hash": "3101631633852003468"
+      },
+      {
+        "file": ".nx/workspace-data/a03ba679-1705-4859-b0ab-6a86d4a6ac81.db-wal",
+        "hash": "1875126686998169834"
+      }
+    ],
+    "projectFileMap": {
+      "kanban": [
+        {
+          "file": "apps/kanban/.env",
+          "hash": "506040121019913055"
+        },
+        {
+          "file": "apps/kanban/index.html",
+          "hash": "3534712537648159639"
+        },
+        {
+          "file": "apps/kanban/postcss.config.js",
+          "hash": "147524195716498539"
+        },
+        {
+          "file": "apps/kanban/project.json",
+          "hash": "308998241302606887"
+        },
+        {
+          "file": "apps/kanban/public/favicon.ico",
+          "hash": "3069367796644408975"
+        },
+        {
+          "file": "apps/kanban/src/App.tsx",
+          "hash": "12203758124922779724"
+        },
+        {
+          "file": "apps/kanban/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/kanban/src/config/index.ts",
+          "hash": "4349072003871147088"
+        },
+        {
+          "file": "apps/kanban/src/features/Kanban/index.tsx",
+          "hash": "4534502507385531391",
+          "deps": [
+            "kanban-libs"
+          ]
+        },
+        {
+          "file": "apps/kanban/src/global.css",
+          "hash": "3568422128795477380"
+        },
+        {
+          "file": "apps/kanban/src/lib/axios.ts",
+          "hash": "15801789796076719437",
+          "deps": [
+            "npm:axios",
+            "kanban-libs"
+          ]
+        },
+        {
+          "file": "apps/kanban/src/lib/react-query.ts",
+          "hash": "16186523023975098786",
+          "deps": [
+            "npm:@tanstack/react-query",
+            "npm:axios",
+            "npm:type-fest"
+          ]
+        },
+        {
+          "file": "apps/kanban/src/main.tsx",
+          "hash": "207370010115435162",
+          "deps": [
+            "npm:react",
+            "npm:react-dom"
+          ]
+        },
+        {
+          "file": "apps/kanban/src/providers/app.tsx",
+          "hash": "11465284620612132996",
+          "deps": [
+            "kanban-libs",
+            "npm:@tanstack/react-query",
+            "npm:react",
+            "npm:react-error-boundary",
+            "npm:react-helmet-async",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "apps/kanban/src/routes/index.tsx",
+          "hash": "18300115065478580630",
+          "deps": [
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "apps/kanban/src/routes/public/index.tsx",
+          "hash": "13732040725361470734",
+          "deps": [
+            "kanban-libs",
+            "npm:react",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "apps/kanban/src/stores/navigate.ts",
+          "hash": "580805414031252016",
+          "deps": [
+            "npm:zustand"
+          ]
+        },
+        {
+          "file": "apps/kanban/tailwind.config.js",
+          "hash": "4236672692071903676",
+          "deps": [
+            "npm:@nx/react",
+            "npm:tailwindcss",
+            "npm:tailwindcss-animate"
+          ]
+        },
+        {
+          "file": "apps/kanban/tsconfig.app.json",
+          "hash": "12656594885981117512"
+        },
+        {
+          "file": "apps/kanban/tsconfig.json",
+          "hash": "4670445555964699603"
+        },
+        {
+          "file": "apps/kanban/tsconfig.spec.json",
+          "hash": "11378287594513225419"
+        },
+        {
+          "file": "apps/kanban/vite.config.ts",
+          "hash": "8975618636986913532",
+          "deps": [
+            "npm:@nx/vite",
+            "npm:@vitejs/plugin-react",
+            "npm:vite"
+          ]
+        }
+      ],
+      "kanban-libs": [
+        {
+          "file": "libs/.babelrc",
+          "hash": "15003411175763814189"
+        },
+        {
+          "file": "libs/README.md",
+          "hash": "11029559474019500429"
+        },
+        {
+          "file": "libs/package.json",
+          "hash": "18032270502765737220"
+        },
+        {
+          "file": "libs/project.json",
+          "hash": "14326686953289565794"
+        },
+        {
+          "file": "libs/shared/components/base/button.tsx",
+          "hash": "16135997287363754504",
+          "deps": [
+            "npm:@radix-ui/react-slot",
+            "npm:class-variance-authority",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/shared/components/base/dialog.tsx",
+          "hash": "10583453917322879494",
+          "deps": [
+            "npm:lucide-react",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/shared/components/base/form.tsx",
+          "hash": "15822099172438801321",
+          "deps": [
+            "npm:@radix-ui/react-label",
+            "npm:@radix-ui/react-slot",
+            "npm:react",
+            "npm:react-hook-form"
+          ]
+        },
+        {
+          "file": "libs/shared/components/base/index.ts",
+          "hash": "5737266610373023365"
+        },
+        {
+          "file": "libs/shared/components/base/input.tsx",
+          "hash": "15013165546673820993",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/shared/components/base/label.tsx",
+          "hash": "12170711001119643116",
+          "deps": [
+            "npm:@radix-ui/react-label",
+            "npm:class-variance-authority",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/shared/components/base/toast.tsx",
+          "hash": "15948411083697293503",
+          "deps": [
+            "npm:@radix-ui/react-toast",
+            "npm:class-variance-authority",
+            "npm:lucide-react",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/shared/components/custom/index.ts",
+          "hash": "17260967135148864537"
+        },
+        {
+          "file": "libs/shared/components/custom/kanban-board.tsx",
+          "hash": "13628661423008833672",
+          "deps": [
+            "npm:@syncfusion/ej2-react-kanban"
+          ]
+        },
+        {
+          "file": "libs/shared/components/custom/kanban-dialog.tsx",
+          "hash": "5969597931310510232",
+          "deps": [
+            "npm:@hookform/resolvers",
+            "npm:react-hook-form",
+            "npm:zod"
+          ]
+        },
+        {
+          "file": "libs/shared/components/custom/spinner.tsx",
+          "hash": "13557662670746144194",
+          "deps": [
+            "npm:class-variance-authority",
+            "npm:lucide-react",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/shared/components/custom/toaster.tsx",
+          "hash": "18386257120248345506"
+        },
+        {
+          "file": "libs/shared/hooks/useLoading.ts",
+          "hash": "3939539171576241070",
+          "deps": [
+            "npm:zustand"
+          ]
+        },
+        {
+          "file": "libs/shared/hooks/useToast.ts",
+          "hash": "10164481173817748816",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/shared/index.ts",
+          "hash": "8448059975897424889"
+        },
+        {
+          "file": "libs/shared/utils.ts",
+          "hash": "567903371142679323",
+          "deps": [
+            "npm:clsx",
+            "npm:react",
+            "npm:tailwind-merge"
+          ]
+        },
+        {
+          "file": "libs/tsconfig.json",
+          "hash": "17655069187635666797"
+        },
+        {
+          "file": "libs/tsconfig.lib.json",
+          "hash": "13703889145155981150"
+        },
+        {
+          "file": "libs/tsconfig.spec.json",
+          "hash": "14106903832453232826"
+        },
+        {
+          "file": "libs/vite.config.ts",
+          "hash": "7165087696039233017",
+          "deps": [
+            "npm:@nx/vite",
+            "npm:@vitejs/plugin-react",
+            "npm:vite",
+            "npm:vite-plugin-dts"
+          ]
+        }
+      ]
+    }
+  }
+}

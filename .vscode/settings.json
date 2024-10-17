@@ -1,0 +1,152 @@
+{
+  "i18n-ally.localesPaths": [
+    "src/locales"
+  ],
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "search.exclude": {
+    "package-lock.json": true
+  },
+  "editor.defaultFormatter": "biomejs.biome",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "quickfix.biome": "explicit",
+    "source.organizeImports.biome": "explicit"
+  },
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "typescript.preferences.autoImportFileExcludePatterns": [
+    "next/router.d.ts",
+    "next/dist/client/router.d.ts",
+    "lucide-react"
+  ],
+  "typescript.preferences.preferTypeOnlyAutoImports": true,
+  "testing.openTesting": "neverOpen",
+  "[json][jsonc][yaml]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "i18n-ally.keystyle": "nested",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "files.autoSave": "afterDelay",
+  "[json]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "commit-message-editor.dynamicTemplate": [
+    "{type}{scope}: {description}",
+    "",
+    "{body}",
+    "",
+    "{breaking_change}{footer}"
+  ],
+  "commit-message-editor.tokens": [
+    {
+      "label": "Type",
+      "name": "type",
+      "type": "enum",
+      "options": [
+        {
+          "label": "---",
+          "value": ""
+        },
+        {
+          "label": "build",
+          "description": "Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)"
+        },
+        {
+          "label": "chore",
+          "description": "Updating grunt tasks etc; no production code change"
+        },
+        {
+          "label": "ci",
+          "description": "Changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs)"
+        },
+        {
+          "label": "docs",
+          "description": "Documentation only changes"
+        },
+        {
+          "label": "feat",
+          "description": "A new feature"
+        },
+        {
+          "label": "fix",
+          "description": "A bug fix"
+        },
+        {
+          "label": "perf",
+          "description": "A code change that improves performance"
+        },
+        {
+          "label": "refactor",
+          "description": "A code change that neither fixes a bug nor adds a feature"
+        },
+        {
+          "label": "revert"
+        },
+        {
+          "label": "style",
+          "description": "Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)"
+        },
+        {
+          "label": "test",
+          "description": "Adding missing tests or correcting existing tests"
+        }
+      ],
+      "description": "Type of changes"
+    },
+    {
+      "label": "Scope",
+      "name": "scope",
+      "description": "A scope may be provided to a commit’s type, to provide additional contextual information and is contained within parenthesis, e.g., \"feat(parser): add ability to parse arrays\".",
+      "type": "text",
+      "multiline": false,
+      "prefix": "(",
+      "suffix": ")"
+    },
+    {
+      "label": "Short description",
+      "name": "description",
+      "description": "Short description in the subject line.",
+      "type": "text",
+      "multiline": false
+    },
+    {
+      "label": "Body",
+      "name": "body",
+      "description": "Optional body",
+      "type": "text",
+      "multiline": true,
+      "lines": 5,
+      "maxLines": 10
+    },
+    {
+      "label": "Breaking change",
+      "name": "breaking_change",
+      "type": "boolean",
+      "value": "BREAKING CHANGE: ",
+      "default": false
+    },
+    {
+      "label": "Footer",
+      "name": "footer",
+      "description": "Optional footer",
+      "type": "text",
+      "multiline": true
+    }
+  ],
+  "commit-message-editor.view.defaultView": "form",
+  "commit-message-editor.view.saveAndClose": true,
+  "commit-message-editor.view.useTabs": true,
+  "commit-message-editor.view.useMonospaceEditor": true,
+  "commit-message-editor.view.visibleViews": "form",
+  "commit-message-editor.view.fullWidth": true,
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  }
+}

@@ -1,6 +1,6 @@
 "use client";
 
-import { useToast } from "@hcu/libs/hooks/useToast";
+import { useToast } from "@kanban/libs/hooks/useToast";
 import { Toast, ToastClose, ToastDescription, ToastProvider, ToastTitle, ToastViewport } from "../base";
 
 export function Toaster() {

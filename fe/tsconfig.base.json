@@ -18,9 +18,12 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@hcu/libs/*": [
+      "@kanban/libs/*": [
         "libs/shared/*"
-      ]
+      ],
+      "~kanban/*": [
+        "apps/kanban/src/*"
+      ],
     }
   },
   "exclude": [
