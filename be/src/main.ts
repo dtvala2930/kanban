@@ -6,7 +6,7 @@ import helmet from "helmet";
 
 import { DocumentBuilder, SwaggerModule } from "@nestjs/swagger";
 import bodyParser from "body-parser";
-import { ONLINE_STORAGE_URL, POC_URL } from "~configs/app.config";
+import { KANBAN_URL, ONLINE_STORAGE_URL } from "~configs/app.config";
 import { API_PREFIX_PATH } from "~utils/constants";
 import { LoggerService as Logger } from "~utils/logger";
 import { AppModule } from "./app.module";
@@ -67,7 +67,7 @@ export async function setupMiddleware(app) {
 
   // Enable CORS
   app.enableCors({
-    origin: [POC_URL],
+    origin: [KANBAN_URL],
   });
 
   return app;

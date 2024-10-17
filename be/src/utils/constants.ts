@@ -1,4 +1,4 @@
-export const API_PREFIX_PATH = "/poc/api/v1";
+export const API_PREFIX_PATH = "/kanban/api/v1";
 
 export const MAIL_SPAM = ["yopmail"];
 
@@ -26,7 +26,7 @@ export const SORT_ASC = "ASC";
 
 export const MSG_INTERNAL_SERVER_ERROR = "internal-server-error";
 export const MSG_NOT_FOUND = "not-found";
-export const POC_APP_TOKEN = "poc_app_token";
+export const KANBAN_APP_TOKEN = "kanban_app_token";
 
 export const JWT_EXPIRED_TIME_UPDATE_TOKEN = "24h";
 

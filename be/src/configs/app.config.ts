@@ -46,4 +46,4 @@ export const IMAGE_FILE_TYPE = process.env.IMAGE_FILE_TYPE;
 export const VIDEO_FILE_TYPE = process.env.VIDEO_FILE_TYPE;
 
 // for Access-Control-Allow-Origin header
-export const POC_URL = process.env.POC_URL;
+export const KANBAN_URL = process.env.KANBAN_URL;
